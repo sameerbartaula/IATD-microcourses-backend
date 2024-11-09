@@ -47,3 +47,15 @@ npm start
 ```
 
 #### The server should now be running at http://localhost:5050.
+
+## Data Population and API Testing
+
+In the `ForData` folder, you’ll find resources to populate the MongoDB database and test API endpoints:
+
+- **dummyData.txt** – Sample data for course creation.
+- **forMacCreateCourseData.sh** – Bash script for populating data on Mac/Linux systems.
+- **forWindowCreateCourseData.bat** – Batch script for populating data on Windows systems.
+- **MicroCourses APIs.postman_collection.json** – A Postman collection with all API endpoint details for easy testing.
+
+Depending on your machine, use either `.sh` (Mac/Linux) or `.bat` (Windows) scripts, or import the Postman collection to quickly populate data and explore available endpoints.
+
