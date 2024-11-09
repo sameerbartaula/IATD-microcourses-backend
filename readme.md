@@ -20,7 +20,7 @@ code .
 
 ## Install Node.js
 
-Ensure that Node.js is installed on your system. Download Node.js if it's not already installed.
+Ensure that Node.js is installed on your system. Download Node.js if it's not already installed. https://nodejs.org/en/download/package-manager 
 
 ## Install Project Dependencies
 Install the necessary Node.js packages by running:
@@ -29,6 +29,7 @@ Install the necessary Node.js packages by running:
 npm install
 ```
 ## Configure MongoDB
+- If not installed/configured https://www.mongodb.com/try/download/community
 - Start MongoDB on your local machine.
 - Create a database named MicroCourses.
 - Inside this database, create a collection named courses.
