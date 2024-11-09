@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "9e4523a0-1dbd-4a91-aba0-b0ae42a04db1",
+		"name": "MicroCourses APIs",
+		"description": "This collection contains endpoints for the MicroCourses API, which provides information and management functionality for online courses. The API allows users to retrieve course listings, create new courses, and access detailed information about specific courses. Each endpoint is equipped with useful descriptions and example requests to facilitate testing and integration.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35138857"
+	},
+	"item": [
+		{
+			"name": "List Courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/courses",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"courses"
+					]
+				},
+				"description": "Retrieve all courses."
+			},
+			"response": []
+		},
+		{
+			"name": "Create Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Graphic Design Fundamentals\",\n    \"description\": \"A course designed for beginners that covers the principles of graphic design, typography, and color theory.\",\n    \"instructor\": \"Sarah Davis\",\n    \"duration\": \"5 weeks\",\n    \"category\": \"Design\",\n    \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yFLvrBjOxZm-hSFL4OpTl_RQsyi9xO5zxA&s\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/courses",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"courses"
+					]
+				},
+				"description": "Create a new course."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Course by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/courses/{id}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"courses",
+						"{id}"
+					]
+				},
+				"description": "Retrieve a specific course by its ID."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}
