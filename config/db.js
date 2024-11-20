@@ -5,7 +5,7 @@ dotenv.config();
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/MicroCourses', {
+        await mongoose.connect('mongodb+srv://mongoUser:DDwGGtBjN6Z5FwcM@free-tier.yc5fr.mongodb.net/MicroCourses?retryWrites=true&w=majority', {
         });
         console.log("Database connected");
     } catch (error) {
