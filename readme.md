@@ -39,7 +39,7 @@ npm install
 
 **Use the strikethrough connection string only if you want to connect to a local MongoDB instance.**
 
-**If you want to use MongoDB Cloud, the connection string is already added in the `config/db.js` file which have all the required data**
+**<span style="color:red;">If you want to use MongoDB Cloud, the connection string is already added in the `config/db.js` file which have all the required data</span>**
 
 ## Start the Server
 To start the backend server, use:
